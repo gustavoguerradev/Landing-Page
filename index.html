@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Landing Page</title>
+    </head>
+
+    <body>
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+        <header id="menu" class="white-bg">
+            <div class="main-content">
+                <div id="logo" onclick="getElementById('close-menu').checked = false;">
+                    <img src="imgs/logo.svg" alt="Logo">
+                </div>
+    
+                <nav id="menu-nav">
+                    <ul onclick="getElementById('close-menu').checked = false;">
+                        <li><a href="#intro-content">Intro</a></li>
+                        <li><a href="#como-funciona-content">Como funciona</a></li>
+                        <li><a href="#modulos-content">Módulos</a></li>
+                        <li><a href="#subscription-content">Participar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="spacing"></div>
+
+        <section class="main-bg section">
+            <div class="main-content" id="intro-content">
+                
+                <div id="intro-content-text">
+                    <h1 class="h1">BootCamp Iniciativa Programador</h1>
+                    <p>A Iniciativa Programador é uma excelente oportunidade para desenvolver habilidades valiosas em tecnologia e para se preparar para uma carreira em um mundo cada vez mais digital.
+                    </p>
+                </div>
+                <div id="intro-content-img">
+                    <img src="imgs/illustration.svg">
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="white-bg section">
+            <div class="main-content" id="como-funciona-content">
+                <h1>Como funciona</h1>
+                <p>Os alunos aprenderão a utilizar diversas linguagens de programação, como Python, JavaScript e C++, para criar projetos incríveis, desde simples jogos até aplicativos para celular. Além disso, eles aprenderão sobre lógica de programação, algoritmos e pensamento computacional.</p>
+
+                <p>O projeto inclui também aulas práticas e projetos individuais e em grupo, para que os alunos possam aplicar o que aprenderam e desenvolver suas habilidades de trabalho em equipe. Além disso, haverá sessões de mentorias e orientação para ajudar os alunos a planejar seus estudos e alcançar seus objetivos.</p>
+                
+                <p>O projeto é aberto a todos os interessados, independentemente de sua experiência anterior com programação. Ele é projetado para ser acessível e inclusivo, oferecendo suporte para os alunos com necessidades especiais e disponibilizando materiais de ensino em diversos idiomas.</p>
+            </div>
+        </section>
+
+        <section class="main-bg section">
+            <div class="main-content" id="modulos-content">
+                <h1>Oque você irá aprender</h1>
+                <div id="grid-modulos">
+                    <div class="card-modulo">
+                        <h2>Front-End</h2>
+                        <p>Front-end é a parte da programação que se concentra na interação do usuário com o sistema. É responsável por criar a interface visual e a navegação do usuário, usando tecnologias como HTML, CSS e JavaScript. A programação front-end geralmente é voltada para a criação de aplicações web e dispositivos móveis.</p>
+                    </div>
+                    <div class="card-modulo">
+                        <h2>Back-End</h2>
+                        <p>Back-end é a parte da programação que se concentra nas tarefas internas do sistema, como gerenciamento de banco de dados, lógica de negócios e comunicação com outros sistemas. As linguagens de programação mais comuns usadas para back-end incluem Python, Java e Ruby.</p>
+                    </div>
+                    <div class="card-modulo">
+                        <h2>Soft-skills</h2>
+                        <p>Soft-skills são habilidades interpessoais e comportamentais, como comunicação eficaz, trabalho em equipe, pensamento crítico, resolução de problemas e capacidade de aprendizado. Elas são consideradas importantes para o sucesso em qualquer área de trabalho, e especialmente relevantes para a tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="white-bg">
+            <div class="main-content" id="subscription-content">
+                <div id="subscription-content-text">
+                    <h1>Participe e mude de vida</h1>
+                    <p>Não perca esta incrível oportunidade de desenvolver habilidades valiosas e se preparar para uma carreira em um mundo cada vez mais digital. Inscreva-se agora para garantir sua vaga!
+                    </p>
+                </div>
+                <div id="subscription-content-img">
+                    <img src="imgs/illustration2.svg">
+                </div>
+                <fieldset>
+                    <legend>Preencha seus dados abaixo</legend>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" placeholder="Seu nome...">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">E-mail:</label>
+                        <input type="text" name="e-mail" placeholder="Seu e-mail...">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Telefone:</label>
+                        <input type="text" name="e-mail" placeholder="(+55) ....">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+
+        <footer>
+            Desenvolvido por Gustavo Guerra
+        </footer>
+    </body>
+</html>
